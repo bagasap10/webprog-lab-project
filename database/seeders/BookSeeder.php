@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class BookSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class BookSeeder extends Seeder
      */
     public function run()
     {
+        
+
         $data = [
             ['name'=>'BOOK1', 'author'=> '', 'synopsis'=> '', 'price'=> 100, 'cover'=>'NamaFilenya1.png'],
             ['name'=>'BOOK2', 'author'=> '', 'synopsis'=> '', 'price'=> 100, 'cover'=>'NamaFilenya2.png'],

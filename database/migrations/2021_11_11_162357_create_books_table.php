@@ -15,16 +15,15 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-
             $table->string('name');
             $table->string('author');
             $table->string('synopsis');
             $table->integer('price');
             $table->string('cover'); // How to store file cover??
-
-            $table->unsignedBigInteger('genreID');
-            $table->foreign('genreID')->references('id')->on('genres');
+            $table->timestamps();
+            
+            // $table->unsignedBigInteger('genreID');
+            // $table->foreign('genreID')->references('id')->on('genres');
         });
     }
 
