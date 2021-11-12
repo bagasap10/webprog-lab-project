@@ -14,6 +14,19 @@ class GenreSeeder extends Seeder
      */
     public function run()
     {
+        $data = [
+            ['name'=>'kids'],
+            ['name'=>'biography'],
+            ['name'=>'horror'],
+            ['name'=>'fiction'],
+            ['name'=>'comedy'],
+            ['name'=>'romance'],
+            ['name'=>'autobiography'],
+            ['name'=>'religion'],
+            ['name'=>'war'],
+            ['name'=>'adult'],
+        ];
 
+        DB::table('genres')->insert($data); // Query Builder approach
     }
 }
