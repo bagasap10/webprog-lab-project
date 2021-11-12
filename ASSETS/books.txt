@@ -1,0 +1,71 @@
+$data = [
+    ['name'=>'Leon Teletubbies', 'author'=> 'Dr. Ir. Leong', 'synopsis'=> 'This is a story of 4 teletubbies accompanied by bald yellow smiling Leon as the sun', 'price'=> 50000, 'cover'=>'leonsun.png'],
+    ['name'=>'Mein Kampf', 'author'=> 'Adolf Hitler', 'synopsis'=> 'This is a story of a painter who his arts are not accepted by the world and seeks revenge', 'price'=> 720000, 'cover'=>'meinkampf.png'],
+    ['name'=>'Ah shoot here we go again', 'author'=> 'lil bap', 'synopsis'=> 'Worst place in the world. Rollin Heights Balla Country. I ain't represented Grove Street in five years, but the Ballas won't give a shoot.', 'price'=> 69000, 'cover'=>'cjbap.png'],
+	['name'=>'Zakir Turun', 'author'=> 'Naik Zakir', 'synopsis'=> 'Famous for his debate in Islamic tv station, Naik Zakir writes his lifelong struggle to be known as he is today.', 'price'=> 1000000, 'cover'=>'zakirbap.png'],
+	['name'=>'Slenderman', 'author'=> 'Faze', 'synopsis'=> 'A tall bald white figure stands in Faiz's bed as he stares into Faiz eyes deep into his soul.', 'price'=> 42000, 'cover'=>'faizatnight.png'],
+	['name'=>'Legion', 'author'=> 'Titanfall', 'synopsis'=> 'A titan and its pilot fight in a war, war never changes.', 'price'=> 200000, 'cover'=>'legion.png'],
+	['name'=>'Optimum Pride', 'author'=> 'Pootank Eena', 'synopsis'=> 'UGHH AGHH AGHHHH AGHHHH AGHHHHH', 'price'=> 500000, 'cover'=>'optimumpride.png'],
+	['name'=>'HMMMM', 'author'=> 'Red Guy', 'synopsis'=> 'Sorry for what? Our daddy told us not to be shame of ourselves', 'price'=> 69420, 'cover'=>'hmmmm.png'],
+	['name'=>'The Smurfs', 'author'=> 'JUWEX', 'synopsis'=> 'Blue creatures lives in a mushroom, building a community of smurfs', 'price'=> 100000, 'cover'=>'smurfwex.png'],
+	['name'=>'Semarangans', 'author'=> 'Ol Bap', 'synopsis'=> 'I have been living in Semarang, let me tell you up and down living in a coast below a mountain.', 'price'=> 22000, 'cover'=>'oldbap.png],
+	['name'=>'Kafkaesque', 'author'=> 'Franz Kafka', 'synopsis'=> 'Franz Kafka was a German-speaking Bohemian novelist and short-story writer, widely regarded as one of the major figures of 20th-century literature.', 'price'=> 1883000, 'cover'=>'kafka.png'],
+	['name'=>'Family', 'author'=> 'Dom Cornetto', 'synopsis'=> 'It's been a long day without you, my friend. And I'll tell you all about it when I see you again', 'price'=> 900000, 'cover'=>'family.png'],
+	['name'=>'ASTROWORLD', 'author'=> 'Travis Scott', 'synopsis'=> 'At least eight people are dead and many others injured after a crowd surged forward toward a stage at the Astroworld Festival in Houston on Friday night.', 'price'=> 420000, 'cover'=>'travis.png'],
+	['name'=>'Certified Lover Boy', 'author'=> 'Drake', 'synopsis'=> 'Say that you a lesbian, girl, me too', 'price'=> 50000, 'cover'=>'drizzy.png'],
+	['name'=>'Dragon Drip', 'author'=> 'GOKU', 'synopsis'=> 'Frieza took the seventh Jordan 1, Saiyans try to claim it back using the power of Supreme X North Face jacket.', 'price'=> 100000000, 'cover'=>'drip.png'],
+];
+
+DB::table('books')->insert($data); // Query Builder approach
+
+$data = [
+    ['name'=>'kids'],
+	['name'=>'biography'],
+	['name'=>'horror'],
+	['name'=>'fiction'],
+	['name'=>'comedy'],
+	['name'=>'romance'],
+	['name'=>'autobiography'],
+	['name'=>'religion'],
+	['name'=>'war'],
+	['name'=>'adult'],
+];
+
+DB::table('genres')->insert($data); // Query Builder approach
+
+$data = [
+    ['bookid'=> 1, 'genre_id'=> 1],
+    ['bookid'=> 1, 'genre_id'=> 6],
+    ['bookid'=> 2, 'genre_id'=> 2],
+    ['bookid'=> 2, 'genre_id'=> 4],
+    ['bookid'=> 3, 'genre_id'=> 2],
+    ['bookid'=> 3, 'genre_id'=> 6],
+	['bookid'=> 4, 'genre_id'=> 2],
+    ['bookid'=> 4, 'genre_id'=> 8],
+	['bookid'=> 5, 'genre_id'=> 4],
+    ['bookid'=> 5, 'genre_id'=> 5],
+	['bookid'=> 6, 'genre_id'=> 5],
+    ['bookid'=> 6, 'genre_id'=> 9],
+	['bookid'=> 7, 'genre_id'=> 6],
+    ['bookid'=> 7, 'genre_id'=> 1],
+	['bookid'=> 8, 'genre_id'=> 7],
+    ['bookid'=> 8, 'genre_id'=> 6],
+	['bookid'=> 9, 'genre_id'=> 1],
+    ['bookid'=> 9, 'genre_id'=> 6],
+	['bookid'=> 10, 'genre_id'=> 3],
+    ['bookid'=> 10, 'genre_id'=> 6],
+	['bookid'=> 11, 'genre_id'=> 2],
+    ['bookid'=> 11, 'genre_id'=> 4],
+	['bookid'=> 12, 'genre_id'=> 2],
+	['bookid'=> 12, 'genre_id'=> 5],
+    ['bookid'=> 12, 'genre_id'=> 6],
+	['bookid'=> 13, 'genre_id'=> 6],
+    ['bookid'=> 13, 'genre_id'=> 10],
+	['bookid'=> 14, 'genre_id'=> 6],
+	['bookid'=> 14, 'genre_id'=> 1],
+    ['bookid'=> 14, 'genre_id'=> 7],
+	['bookid'=> 13, 'genre_id'=> 1],
+    ['bookid'=> 13, 'genre_id'=> 6],
+];
+
+DB::table('book_genres')->insert($data); // Query Builder approach
